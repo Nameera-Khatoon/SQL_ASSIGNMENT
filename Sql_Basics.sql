@@ -31,7 +31,7 @@ SELECT *
 FROM employees
 ORDER BY salary ASC;
 
-
+-- Q4
 -- Display employees sorted by department A–Z
 -- and within each department, sort salary from highest to lowest
 SELECT *
@@ -39,6 +39,7 @@ FROM employees
 ORDER BY department ASC, salary DESC;
 
 
+-- Q5
 -- Show all employees who work in the IT department
 -- Sort them by hire date from newest to oldest
 SELECT *
@@ -46,6 +47,8 @@ FROM employees
 WHERE department = 'IT'
 ORDER BY hire_date DESC;
 
+
+-- Q6
 -- Create the sales table
 CREATE TABLE sales (
     sale_id INT PRIMARY KEY,
@@ -64,6 +67,7 @@ VALUES
     (5, 'Rohan', 4500, '2024-09-25');
 
 
+-- Q7
 -- Select all columns from the sales table
 -- Sort the results based on the 'amount' column
 -- Use DESC to ensure the highest values appear first
@@ -71,7 +75,7 @@ SELECT *
 FROM sales 
 ORDER BY amount DESC;
 
-
+-- Q8
 -- Retrieve all record details
 -- Filter the results to only include the customer named 'Aditi'
 -- Note: String values must be enclosed in single quotes
